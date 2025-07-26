@@ -1,0 +1,28 @@
+### Add a Category
+POST http://127.0.0.1:5000/categories
+Content-Type: application/json
+
+{
+    "name": "Electronics"
+}
+
+### Add a Product
+POST http://127.0.0.1:5000/products
+Content-Type: application/json
+
+{
+    "name": "Laptop Pro",
+    "description": "Powerful laptop for professionals",
+    "price": 1200.50,
+    "stock": 50,
+    "category": "Electronics"
+}
+
+### Get all Products
+GET http://127.0.0.1:5000/products
+
+### Get all Categories
+GET http://127.0.0.1:5000/categories
+
+### Get Product Category Summary
+GET http://127.0.0.1:5000/products/category_summary
